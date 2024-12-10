@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+.logo img {
+      height: 45px;
+      width: 75px;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      margin-top: 100px; /* Add margin to avoid content under the fixed header */
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 2rem;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input {
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 1.1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .signup-link {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .forgot-password {
+      text-align: right;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://t3.ftcdn.net/jpg/03/75/67/78/360_F_375677878_T4fjvxu4FjWxKgeDkuscoxn1bYFgPuxi.jpg" alt="Logo">
+      </div>
+    </div>
+  </div>
+
+ <center> <div class="login-container">
+    <h2>Login</h2>
+    <form action="/login" method="post" class="login-form">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required placeholder="Enter username">
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Enter password">
+      </div>
+
+      <div class="forgot-password">
+        <a href="/forgotpassword">Forgot Password?</a>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <p class="signup-link">
+        Don't have an account? <a href="register.html">Sign up here</a>
+      </p>
+    </form>
+  </div>
+</center>
+
+<br>
+<br>
+  <div class="footer">
+    <div class="conatiner">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download our app
+  
+          </h3>
+          <p> Download App for Android and ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Download_on_the_App_Store_Badge_FRCA_RGB_blk.svg/2560px-Download_on_the_App_Store_Badge_FRCA_RGB_blk.svg.png">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3s8Zjz1KKuB8hDCIz2hd9GRkYfpdJGQ4vEgtBEQa31ihrbI8Je2xyQSWLYvh7C4RRmA&usqp=CAU">
+          </div>
+  
+        </div>
+        <div class="footer-col-2">
+         <img src="https://t3.ftcdn.net/jpg/03/75/67/78/360_F_375677878_T4fjvxu4FjWxKgeDkuscoxn1bYFgPuxi.jpg" height="45" width="75px">
+          <p> Our Purpose is to Sustainably Make the Pleasure and Benfifts of things to the many.</p>
+  
+        </div>
+        <div  class="footer-col-3">
+          <h3>Useful links </h3>
+          <ul>
+            
+            <li><a href="#coupons"  href="https://example.com">Coupons</a></li>
+            <li><a href="#blog"  href="https://example.com">Blog Post</a></li>
+            <li><a href="#return-policy" href="https://example.com">Return Policy</a></li>
+            
+        
+          </ul>
+          
+        </div>
+        <div class="footer-col-4">
+          <h3  id ="contact">Follow us  </h3>
+          <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+        
+          </ul>
+          
+        </div>
+        
+  
+      </div>
+      <p  id ="about" style="text-align: end;position: relative;" >Aboutus</p>
+     
+        
+    </section>
+      <hr>
+      <center>
+        <p class="copyright">Copyright 2024</p>
+      </center>
+      
+    </div>
+  </div>
+
+</body>
+</html>
